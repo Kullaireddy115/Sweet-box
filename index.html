@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico?" type="image/x-icon">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <header class="header">e-library</header>
+        <main class="container">
+            <button type="button" class="add-new-book">+ Add book</button>
+            <div class="title">Library</div>
+            <div class="subtitles">
+                <div class="subtitle-book-title">Book Title</div>
+                <div class="subtitle-book-context">Book Context</div>
+                <div class="subtitle-book-author">Book Author</div>
+                <div class="subtitle-book-pages">Book Pages</div>
+                <div class="subtitle-book-read">Read?</div>
+                <div class="subtitle-book-remove">Remove?</div>
+            </div>
+            <div class="gray-separator"></div>
+            <div class="library">
+                <div class="book" data-index=0>
+                    <div class="book-title">Lord of The Rings</div>
+                    <div class="book-context">Middle earth books explaining battles between elves, orcs and humans</div>
+                    <div class="book-author">JRR Tolkien</div>
+                    <div class="book-pages">343</div>
+                    <div class="read">Read</div>
+                    <button type="button" class="book-remove-button">Remove</button>
+                </div>
+                <div class="book" data-index=1>
+                    <div class="book-title">Lord of The Rings</div>
+                    <div class="book-context">Middle earth books explaining battles between elves, orcs and humans</div>
+                    <div class="book-author">JRR Tolkien</div>
+                    <div class="book-pages">343</div>
+                    <div class="read">Read</div>
+                    <button type="button" class="book-remove-button">Remove</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">Copyright © 2022 Bahadir UNGOR</footer>
+        <div class="book-form-overlay"></div>
+        <div class="book-form-container">
+            <div><h4>Add New Book</h4></div>
+            <form class="book-form" action="" method="post">
+                    <input class="form-book-title-input" type="text" minlength="2" maxlength="30" name="book-title" id="book-title" placeholder="Title" required autocomplete="off">
+                    <input class="form-book-title-input" type="text" minlength="2" maxlength="30" name="author" id="author" placeholder="Author" required autocomplete="off">
+                    <input class="form-book-title-input" type="number" name="pages" id="pages" min="1" max="15000" placeholder="Pages" required>
+                    <div class="read-it-yet">
+                        <label for="read" class="read-label">Have you read it?</label>
+                        <input class="form-checkbox" type="checkbox" name="read" id="read">
+                    </div>
+                    <button class="form-book-submit-btn" type="submit">Add Book</button> 
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
